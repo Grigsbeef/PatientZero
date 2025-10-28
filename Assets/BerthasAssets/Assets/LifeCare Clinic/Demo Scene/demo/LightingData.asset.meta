@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1bf26c827eafef8458ee3eb06f9f140a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304105
+  packageName: LifeCare Clinic
+  packageVersion: 1.0
+  assetPath: Assets/LifeCare Clinic/Demo Scene/demo/LightingData.asset
+  uploadId: 741769

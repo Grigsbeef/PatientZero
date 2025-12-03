@@ -1,0 +1,5 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Label text="Make sure to grab the clipboard behind you. It has&#10;a list of symptoms this new plague has. Determine &#10;which patients have the plague to quarintine them.&#10;We must slow down the spread until we find a cure." style="height: 179px; -unity-font-style: bold; font-size: 28px; background-color: rgb(243, 237, 237); position: relative; -unity-text-align: upper-center;" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -2,14 +2,7 @@ fileFormatVersion: 2
 guid: 536fe8a36508a7c4099ec94e97e117d4
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 2100000
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 304105
-  packageName: LifeCare Clinic
-  packageVersion: 1.0
-  assetPath: Assets/LifeCare Clinic/Textures 1/railing.mat
-  uploadId: 741769

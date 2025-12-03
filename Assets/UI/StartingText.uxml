@@ -1,0 +1,5 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Label text="The City has fallen ill to another plague!&#10;&#10;Citizens are piling in the doors complaining&#10;of a variety of symptoms!&#10;&#10;Quickly, get to the hospital and diagnose incoming patients.&#10;&#10;This is the first step to developing a cure!" style="height: 307px; width: 638px; background-color: rgba(0, 0, 0, 0); color: rgb(35, 176, 27); -unity-font-style: bold-and-italic;" />
+    </ui:VisualElement>
+</ui:UXML>

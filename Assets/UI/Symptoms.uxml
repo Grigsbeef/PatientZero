@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; width: 201px;">
+        <ui:Label text="List of Known Symptoms:&#10;&#10;Darkened Veins&#10;&#10;High fever rising and falling&#10;&#10;Shallow breathing&#10;&#10;Coughing of phlegm&#10;&#10;Sudden collapse of strength&#10;&#10;&#10;&#10;&#10;" name="Symptoms" style="height: 200px; color: rgb(0, 0, 0); font-size: 14px; -unity-font-style: bold;" />
+        <ui:Label text="Any patient who is &#10;experiencing two or more &#10;of these should be &#10;quarintined immediately." name="Warning" style="height: 59px; color: rgb(142, 12, 6); -unity-font-style: bold; -unity-text-align: upper-left; width: 343px; font-size: 16px;" />
+    </ui:VisualElement>
+</ui:UXML>

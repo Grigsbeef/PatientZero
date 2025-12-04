@@ -1,0 +1,5 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Label text="Patient Name: Tyler&#10;&#10;Age: 18&#10;&#10;Symptoms: &#10;&#10;Darkened Veins&#10;&#10;Headaches&#10;&#10;Fracture in left arm&#10;&#10;Internal bleeding&#10;&#10;Nausea&#10;&#10;Shallow Breathing&#10;&#10;&#10;" style="height: 442px;" />
+    </ui:VisualElement>
+</ui:UXML>

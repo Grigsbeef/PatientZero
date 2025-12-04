@@ -1,0 +1,10 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/buttonstyle.uss?fileID=7433441132597879392&amp;guid=9976ee75c8ed6fd49968de5394df4e2f&amp;type=3#buttonstyle" />
+    <ui:VisualElement style="flex-grow: 1; font-size: 50px; -unity-text-align: middle-center; white-space: nowrap;">
+        <ui:Label text="Patient Zero" name="Label" style="height: 152px; width: 291px;" />
+        <ui:VisualElement style="flex-grow: 1; justify-content: space-between; align-items: stretch; align-self: auto; align-content: flex-start; margin-top: 12px;">
+            <ui:Button text="Play" name="Play" class="buttonstyle" style="height: 84px; width: 305px; -unity-text-align: middle-center; text-overflow: clip; position: absolute; top: -41px; left: -4px; font-size: 46px; background-color: rgb(255, 255, 255); border-top-left-radius: 54px; border-top-right-radius: 54px; border-bottom-right-radius: 54px; border-bottom-left-radius: 54px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; transition-duration: 0.5s;" />
+            <ui:Button text="Quit" name="Quit" class="buttonstyle" style="height: 84px; width: 305px; -unity-text-align: middle-center; text-overflow: clip; position: absolute; top: 148px; left: -4px; font-size: 46px; background-color: rgb(255, 255, 255); border-top-left-radius: 54px; border-top-right-radius: 54px; border-bottom-right-radius: 54px; border-bottom-left-radius: 54px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; transition-duration: 0.5s;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

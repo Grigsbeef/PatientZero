@@ -3,44 +3,37 @@ using UnityEngine.InputSystem;
 
 public class Elevator : MonoBehaviour
 {
-    public Transform platform;          // The platform to move
-    public float moveDistance = 2f;     // How far down it should move
-    public float moveSpeed = 1f;        // Speed of movement
-    public InputActionProperty gripAction; // Grip or any assigned input
+    public Transform bottomPoint;     // The position the platform should move to
+    public float speed = 2f;          // Movement speed
+    private bool moveDown = false;    // Controls movement
 
-    private bool isMoving = false;
-    private Vector3 targetPosition;
-
-    private void OnEnable()
+    void Update()
     {
-        gripAction.action.performed += OnGripPressed;
-    }
-
-    private void OnDisable()
-    {
-        gripAction.action.performed -= OnGripPressed;
-    }
-
-    private void OnGripPressed(InputAction.CallbackContext context)
-    {
-        if (isMoving) return;
-
-        // Set new target below current position
-        targetPosition = platform.position + Vector3.down * moveDistance;
-        StartCoroutine(MovePlatform());
-    }
-
-    private System.Collections.IEnumerator MovePlatform()
-    {
-        isMoving = true;
-
-        while (Vector3.Distance(platform.position, targetPosition) > 0.01f)
+        if (moveDown)
         {
-            platform.position = Vector3.MoveTowards(platform.position, targetPosition, moveSpeed * Time.deltaTime);
-            yield return null;
+            // Move the platform down toward bottomPoint
+            transform.position = Vector3.MoveTowards(
+                transform.position,
+                bottomPoint.position,
+                speed * Time.deltaTime
+            );
         }
+    }
 
-        platform.position = targetPosition; // Snap to target
-        isMoving = false;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            moveDown = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            moveDown = false;
+        }
     }
 }

@@ -3,37 +3,38 @@ using UnityEngine.InputSystem;
 
 public class Elevator : MonoBehaviour
 {
-    public Transform bottomPoint;     // The position the platform should move to
-    public float speed = 2f;          // Movement speed
-    private bool moveDown = false;    // Controls movement
+    [Header("Elevator Settings")]
+    public Transform elevatorPlatform;     // The platform to move
+    public Vector3 targetPosition;         // World-space position the elevator will move to
+    public float speed = 2f;               // Movement speed
 
-    void Update()
+    private bool moveElevator = false;
+    private Vector3 startPosition;
+
+    private void Start()
     {
-        if (moveDown)
+        if (elevatorPlatform != null)
+            startPosition = elevatorPlatform.position;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        // Make sure only the player triggers it
+        if (other.CompareTag("Player"))
         {
-            // Move the platform down toward bottomPoint
-            transform.position = Vector3.MoveTowards(
-                transform.position,
-                bottomPoint.position,
+            moveElevator = true;
+        }
+    }
+
+    private void Update()
+    {
+        if (moveElevator && elevatorPlatform != null)
+        {
+            elevatorPlatform.position = Vector3.MoveTowards(
+                elevatorPlatform.position,
+                targetPosition,
                 speed * Time.deltaTime
             );
-        }
-    }
-
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            moveDown = true;
-        }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            moveDown = false;
         }
     }
 }

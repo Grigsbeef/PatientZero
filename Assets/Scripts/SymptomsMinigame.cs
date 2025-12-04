@@ -4,13 +4,14 @@ public class SymptomsMinigame : MonoBehaviour
 {
     private int infected = 0;
     private int maxinfected = 4;
-    private bool quarntine = false;
+
+    public GameObject UItext;
     public void Update()
     {
-        if (infected == maxinfected && !quarntine) 
+        if (infected == maxinfected) 
         {
             Debug.Log("All patients have been quarntined");
-            quarntine = true;
+            UItext.SetActive(true);
         }
     }
 
@@ -19,14 +20,9 @@ public class SymptomsMinigame : MonoBehaviour
         if (other.tag == "Infected")
         {
             infected++;
+            other.gameObject.SetActive(false);
         }
     }
 
-    public void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Infected")
-        {
-            infected--;
-        }
-    }
+    
 }

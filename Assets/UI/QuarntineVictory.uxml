@@ -1,0 +1,5 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Label text="Mission Update:&#10;“Quarantine successful. Travel to the &#10;Plague Museum to find information &#10;that can stop the infection.”" style="height: 190px;" />
+    </ui:VisualElement>
+</ui:UXML>

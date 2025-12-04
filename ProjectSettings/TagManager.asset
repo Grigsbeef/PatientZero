@@ -7,6 +7,9 @@ TagManager:
   - ArtifactA
   - ArtifactB
   - ArtifactC
+  - Clipboard
+  - Interactable
+  - Infected
   layers:
   - Default
   - TransparentFX

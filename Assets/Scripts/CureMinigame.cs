@@ -23,7 +23,7 @@ public class CureMinigame : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("itemCure"))
+        if(other.gameObject.CompareTag("ItemCure"))
         {
             CurCureItems++;
             other.gameObject.SetActive(false);

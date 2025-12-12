@@ -1,0 +1,5 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Label text="Using Patient Zero&apos;s personal belongings,&#10;we should be able to generate a cure! &#10;&#10;Quickly combine the items together so we&#10;have a serum to give to evertone!" style="height: 124px; width: 415px; background-color: rgba(255, 255, 255, 0.99); color: rgb(0, 0, 0); -unity-font-style: bold-and-italic; font-size: 18px; -unity-text-align: upper-center;" />
+    </ui:VisualElement>
+</ui:UXML>
